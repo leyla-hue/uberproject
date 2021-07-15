@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".driverServiceRegister">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="MAKE SELECTION"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Name your car and select which type of service you can offer."
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Car"
+            android:focusableInTouchMode="true"
+            app:boxStrokeColor="@color/quantum_black_100"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/car_driverService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Car number"
+                app:boxStrokeColor="@color/quantum_black_100"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/matricule_driverService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/quantum_grey200">
+
+            <ImageView
+                android:id="@+id/carx"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/ic_simplecar150_foreground" />
+
+            <TextView
+                android:id="@+id/textcarx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/carx"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textStyle="bold"
+                android:text="CarX"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text2carx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textcarx"
+                android:layout_toRightOf="@id/carx"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Simple drive."
+                android:textColor="@color/quantum_black_100"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_fleche_droite_24dp"
+                android:background="@drawable/bg_round"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/carxtype"
+                android:background="@color/transparent" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/quantum_grey200">
+
+        <ImageView
+            android:id="@+id/carxl"
+            android:layout_margin="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/ic_carbus150_foreground" />
+
+        <TextView
+            android:id="@+id/textcarxl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/carxl"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textStyle="bold"
+            android:text="CarXL"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text2carxl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textcarxl"
+            android:layout_toRightOf="@id/carxl"
+            android:fontFamily="sans-serif-condensed"
+            android:text="For family drive."
+            android:textColor="@color/quantum_black_100"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_fleche_droite_24dp"
+            android:background="@drawable/bg_round"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/carxltype"
+            android:background="@color/transparent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/quantum_grey200">
+
+        <ImageView
+            android:id="@+id/carblack"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/ic_carblack150_foreground" />
+
+        <TextView
+            android:id="@+id/textcarblack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/carblack"
+            android:text="CarBlack"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text2carblack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textcarblack"
+            android:layout_toRightOf="@id/carblack"
+            android:text="For personal drive."
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_fleche_droite_24dp"
+            android:background="@drawable/bg_round"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/carblacktype"
+            android:background="@color/transparent" />
+
+    </RelativeLayout>
+
+
+    </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:id="@+id/progress"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>

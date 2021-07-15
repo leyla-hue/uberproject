@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#94CAC8C8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerSetting"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/quantum_grey200">
+
+        <RelativeLayout
+            android:id="@+id/principal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/quantum_black_100">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/transparent"
+                android:padding="10dp"
+                android:src="@drawable/imageclick" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/back"
+                android:layout_marginStart="10dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/baloo"
+                android:text="My account"
+                android:textColor="@color/quantum_white_100"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/back"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_defaultuser" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativename"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/principal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/layout_selected">
+
+            <TextView
+                android:id="@+id/textname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Name"
+                android:textColor="@color/quantum_black_100"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/flechename"
+                android:fontFamily="sans-serif-condensed"
+                android:text="exemple@hotmail.com"
+                android:textColor="@color/silver"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/flechename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_flehce_setting" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativepseudo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/relativename"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/layout_selected">
+
+            <TextView
+                android:id="@+id/textpseudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Pseudo"
+                android:textColor="@color/quantum_black_100"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/pseudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/flechepseudo"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Pseudo"
+                android:textColor="@color/silver"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/flechepseudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_flehce_setting" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativephone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/relativepseudo"
+            android:background="@drawable/layout_selected">
+
+            <TextView
+                android:id="@+id/textphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Phone"
+                android:textColor="@color/quantum_black_100"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/flechephone"
+                android:fontFamily="sans-serif-condensed"
+                android:text="05555"
+                android:textColor="@color/silver"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/flechephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_flehce_setting" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

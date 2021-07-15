@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="5dp" android:paddingBottom="5dp">
+
+
+    <item>
+        <animation-list>
+            <item android:drawable="@drawable/gradient_1" android:duration="4000">
+                <shape>
+                    <solid android:color="@android:color/transparent"/>
+                    <stroke
+                        android:width="3dp"
+                        android:color="@color/colorAccent" />
+                    <corners android:radius="10dp"/>
+                </shape>
+
+            </item>
+
+            <item android:drawable="@drawable/gradient_2" android:duration="4000">
+                <shape>
+                    <solid android:color="@android:color/transparent"/>
+                    <stroke
+                        android:width="3dp"
+                        android:color="@color/colorAccent" />
+                    <corners android:radius="10dp"/>
+                </shape>
+            </item>
+
+            <item android:drawable="@drawable/gradient_3" android:duration="4000">
+                <shape>
+                    <solid android:color="@android:color/transparent"/>
+                    <stroke
+                        android:width="3dp"
+                        android:color="@color/colorAccent" />
+                    <corners android:radius="10dp"/>
+                </shape>
+            </item>
+        </animation-list>
+
+
+    </item>
+
+
+</layer-list>

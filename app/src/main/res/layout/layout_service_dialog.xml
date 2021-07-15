@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/dialog_bordure"
+    android:id="@+id/layoutDialogService"
+    android:layout_margin="20dp"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/userinformationbordure"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Change your service"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please fill information"
+            android:textColor="@color/quantum_black_100" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonservice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/quantum_white_100"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <Button
+            android:id="@+id/servicemode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="Economic"
+            android:textColor="@color/quantum_black_100" />
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:checkedButton="@id/uberx"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/uberx"
+                    android:background="@color/transparent"
+                    android:button="@color/transparent"
+                    android:checked="true"
+                    android:text="CarX"
+                    android:textColor="@color/transparent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/carx"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/economiccar"
+                    app:civ_border_color="@color/quantum_black_100"
+                    app:civ_border_width="0.5dp" />
+
+                <TextView
+                    android:id="@+id/textcarx"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/carx"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/servicetype"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="center"
+                    android:text="CarX"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/uberxl"
+                    android:background="@color/transparent"
+                    android:button="@color/transparent"
+                    android:text="CarXL"
+                    android:textColor="@color/transparent" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/carxl"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/buscar"
+                    app:civ_border_color="@color/quantum_black_100"
+                    app:civ_border_width="0.5dp" />
+
+                <TextView
+                    android:id="@+id/textcarxl"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/carxl"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/servicetype"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="center"
+                    android:text="CarXL"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/uberblack"
+                    android:background="@color/transparent"
+                    android:button="@color/transparent"
+                    android:checked="true"
+                    android:text="CarBlack"
+                    android:textColor="@color/transparent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/carblack"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/carvip"
+                    app:civ_border_color="@color/quantum_black_100"
+                    app:civ_border_width="0.5dp" />
+
+                <TextView
+                    android:id="@+id/textcarblack"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/carblack"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/servicetype"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="center"
+                    android:text="CarB"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmService"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/infocustomerdriving"
+            android:text="Ok"
+            android:textColor="@color/quantum_googgreen" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelService"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/infocustomerdriving"
+            android:text="Cancel"
+            android:textColor="@color/quantum_googred" />
+    </LinearLayout>
+
+    </LinearLayout>

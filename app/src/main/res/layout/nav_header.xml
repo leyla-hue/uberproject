@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/quantum_black_100"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/navpicture"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_defaultuser" />
+
+    <TextView
+        android:id="@+id/navpseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONVECTOR"
+        android:textColor="@color/quantum_white_100"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nav_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info@gmail.com"
+        android:textColor="@color/quantum_white_100"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+
+</LinearLayout>

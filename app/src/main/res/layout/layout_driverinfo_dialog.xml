@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutDialogDriverinfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bordure"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/dialog_bordure"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/driverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Name"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driverName"
+            android:layout_centerHorizontal="true"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.1" />
+
+        <LinearLayout
+            android:id="@+id/greyInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/userinformationbordure"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_car_local_taxi_black_24dp" />
+
+                <TextView
+                    android:id="@+id/driverCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="start"
+                    android:layout_toRightOf="@+id/photo"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="car"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/photo2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_phone_black_24dp" />
+
+                <TextView
+                    android:id="@+id/driverPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/photo2"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="phone"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/photo3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_numbercar100_foreground" />
+
+                <TextView
+                    android:id="@+id/matr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/photo3"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="matricule"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/pickupdestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/greyInfo"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:id="@+id/redpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_pointpickup" />
+            <TextView
+                android:id="@+id/textredpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/redpoint"
+                android:text="Pickup"
+                android:textColor="@color/quantum_black_100"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/fromto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/redpoint"
+                android:src="@drawable/ic_fromto_24dp" />
+            <ImageView
+                android:id="@+id/greenpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fromto"
+                android:src="@drawable/ic_pointdestination" />
+            <TextView
+                android:id="@+id/textgreenpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fromto"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@+id/greenpoint"
+                android:text="Destination point"
+                android:textColor="@color/quantum_black_100"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pickupdestination"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnshapeuserinfo"
+                android:text="Book"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnshapeuserinfo"
+                android:text="Cancel"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/driverProfileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_defaultuser_round"
+        app:civ_border_color="@color/quantum_white_100"
+        app:civ_border_width="5dp"
+        app:layout_constraintBottom_toTopOf="@id/relativeLayout"
+        app:layout_constraintEnd_toStartOf="@id/layout_dialog"
+        app:layout_constraintStart_toEndOf="@id/layout_dialog"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

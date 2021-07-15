@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "148311026834",
+    "firebase_url": "https://stunning-choir-269719.firebaseio.com",
+    "project_id": "stunning-choir-269719",
+    "storage_bucket": "stunning-choir-269719.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148311026834:android:4e127d49106f45b662ca4b",
+        "android_client_info": {
+          "package_name": "com.example.mynewproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148311026834-atg783cfcrmk1f6d9lvfae8iqc1pdr34.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mynewproject",
+            "certificate_hash": "6aa0ad54128174a11bf231fe4ef945e9d07b9fc2"
+          }
+        },
+        {
+          "client_id": "148311026834-f2rea0hjv6pl8f5a1ba07otmddlspf2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcGDmaU1XJcwMkSWx2jGslLlBp3o1YHPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148311026834-f2rea0hjv6pl8f5a1ba07otmddlspf2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

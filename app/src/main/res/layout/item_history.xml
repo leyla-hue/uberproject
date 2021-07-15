@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="5dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/state_item_history"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_history"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/timeS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Time"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imagePickup"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/timeS"
+            android:layout_toEndOf="@id/image_view"
+            android:padding="5dp"
+            android:src="@drawable/locationcustomer" />
+
+        <TextView
+            android:id="@+id/pickupHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeS"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/imagePickup"
+            android:text="Pickup"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/ft"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/imagePickup"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@id/image_view"
+            android:src="@drawable/ic_fromto_24dp" />
+
+        <TextView
+            android:id="@+id/rideId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rideId"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imageDestination"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ft"
+            android:layout_toEndOf="@+id/image_view"
+            android:padding="5dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/destinationHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ft"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/imageDestination"
+            android:text="Destination"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

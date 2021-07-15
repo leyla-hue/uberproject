@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".essai">
+
+    <RelativeLayout
+        android:id="@+id/pickupdestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greyInfo"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/redpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pointpickup" />
+        <TextView
+            android:id="@+id/textredpoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/redpoint"
+            android:text="Pickup"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/fromto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redpoint"
+            android:src="@drawable/ic_fromto_24dp" />
+        <ImageView
+            android:id="@+id/greenpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fromto"
+            android:src="@drawable/ic_pointdestination" />
+        <TextView
+            android:id="@+id/textgreenpoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fromto"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/greenpoint"
+            android:text="Destination point"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/pickupdestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greyInfo"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:id="@+id/pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/redpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_pointpickup" />
+
+            <TextView
+                android:id="@+id/textredpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/redpoint"
+                android:text="Pickup"
+                android:textColor="@color/quantum_black_100"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/fromto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pickup"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_fromto_24dp" />
+        <RelativeLayout
+            android:id="@+id/destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fromto">
+            <ImageView
+                android:id="@+id/greenpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_pointdestination" />
+            <TextView
+                android:id="@+id/textgreenpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@+id/greenpoint"
+                android:text="Destination point"
+                android:textColor="@color/quantum_black_100"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
